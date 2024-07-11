@@ -26,4 +26,4 @@ for this puposes. Note: NAT GW charges per hour I will only use them when needed
 
 Now it's time to deploy! First I deployed my frontend app wriiten in React.js on s3 bucket as static website hosting. I uploaded the npm build files in s3 bucket and enable public access. Then I configrued AWS cloudfront services as the CDN(Content delivery network). Also set up SSL for security from AWS Certificate Manger. Then I configured Route53 service for DNS which is public hosted. The overall architecture for frontend app is users will hit via public internet through route53 then it will be routed to the cloudfront service. With the SSL connection verified by browser and ACM-Cloud front it will be deliver the static files from S3 bucket to users browser. 
 
-#### Not finished, I will due contents soon....
+
